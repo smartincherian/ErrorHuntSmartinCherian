@@ -1,27 +1,7 @@
 const express = require('express'); 
 const path = require ('path'); 
 const cors = require('cors');
-
-
-
-const nav= [
-    {
-        link:"/books",
-        title:"Books"
-    },
-    {
-        link:"/authors",
-        title:"Authors"
-    },
-    {
-        link:"/books/addbook",
-        title:"Add Book"
-    },
-    {
-        link:"/authors/addauthor",
-        title:"Add Author"
-    }
-]
+const nav = require('./public/js/nav');
 
 const loginRouter = require('./src/routes/loginroute');
 const signupRouter = require('./src/routes/signuproute');
