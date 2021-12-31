@@ -2,9 +2,9 @@ const express = require('express');
 const authorsRouter = express.Router();
 const authordata = require('../model/AuthorModel');
 
-// const methodOverride = require('method-override');
-// const app = new express; 
-// app.use(methodOverride('_method'));
+const methodOverride = require('method-override');
+const app = new express; 
+app.use(methodOverride('_method'));
 
 
 function router(nav){
