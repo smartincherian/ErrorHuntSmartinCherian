@@ -63,7 +63,7 @@ app.get('/',function(req,res){
 
 
 
-app.listen(5000,()=>{
+app.listen(process.env.PORT || 5000,()=>{
 // Part #1 Point 5
     console.log("Server Ready on 5000");
 });
